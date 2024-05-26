@@ -10,6 +10,8 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background : #446c94;
+    overflow-x : hidden;
 }
 
 .container {
@@ -77,6 +79,25 @@ header {
     color           : #38393b;
 }
 
+/**CURSOS*/
+
+#courses img {
+    width        : 150px;
+    height       : 150px;
+    border-radius: 50%;
+    object-fit   : cover;
+}
+
+#courses .col-12 {
+    max-width: 300px;
+    margin   : auto;
+}
+
+/* Añadir margen horizontal para pantallas medianas y grandes */
+.px-md-3 {
+    padding-left : 1rem;
+    padding-right: 1rem;
+}
 
 /**Media queries*/
 
@@ -98,4 +119,10 @@ header {
     }
 
 
+}
+
+@media (min-width: 768px) {
+    #courses .col-md-4 {
+        max-width: none;
+    }
 }
