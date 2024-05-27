@@ -31,9 +31,38 @@ body {
     overflow-x : hidden;
 }
 
+.top {
+    display: none;
+}
+
+.bi-arrow-up-circle {
+    color     : #f1ba77;
+    font-size : 2rem;
+    background: transparent;
+    right     : 3%;
+    position  : fixed;
+    bottom    : 20rem;
+    transition: all .5s ease;
+    animation : upload 3s infinite alternate;
+    cursor    : pointer;
+    z-index   : 10;
+}
+
+@keyframes upload {
+    0% {
+        bottom: 20rem;
+    }
+}
+
+.bi-arrow-up-circle:hover {
+    color: azure;
+}
+
 .container {
     max-width: 1200px;
 }
+
+/**HEADER*/
 
 header {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
