@@ -67,7 +67,7 @@ header {
 }
 
 .btn {
-    background-color: #38393b;
+    background-color: #659cee;
     color           : azure;
     border-radius   : 10px;
     font-weight     : bold;
@@ -134,6 +134,27 @@ header {
     height       : 150px;
     border-radius: 50%;
     background   : #659cee;
+}
+
+.inspiration{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+        url(../img/bg1.png) no-repeat center center/cover;
+    min-height: 100vh;
+}
+
+/**CONTACTO*/
+
+.input-group{
+    background-color: azure;
+    border-radius: 50px;
+}
+
+.form-control{
+    border-radius: 50px;
+}
+
+.form-control:focus {
+    box-shadow: none;
 }
 
 /**Media queries*/
