@@ -8,6 +8,23 @@
     outline   : none !important;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .4rem;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #659cee;
+    border-radius   : 5rem;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
     background : #446c94;
@@ -136,7 +153,7 @@ header {
     background   : #659cee;
 }
 
-.inspiration{
+.inspiration {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
         url(../img/bg1.png) no-repeat center center/cover;
     min-height: 100vh;
@@ -144,12 +161,12 @@ header {
 
 /**CONTACTO*/
 
-.input-group{
+.input-group {
     background-color: azure;
-    border-radius: 50px;
+    border-radius   : 50px;
 }
 
-.form-control{
+.form-control {
     border-radius: 50px;
 }
 
