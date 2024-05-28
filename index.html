@@ -32,7 +32,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-white fw-bold fs-5 " href="#home">Home</a>
+                            <a class="nav-link text-white fw-bold fs-5 " href="#home">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white fw-bold fs-5" href="#courses">Cursos</a>
@@ -58,12 +58,19 @@
                 <button class="btn mt-3">Regístrate</button>
             </div>
         </div>
+
+        <!--Efecto Wave-->
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M-2.54,46.88 C351.30,145.56 215.85,26.16 502.54,13.33 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #446c94;"></path>
+            </svg></div>
     </header>
     <!--Fin Header-->
     <!--Inicio contenido principal-->
     <main>
         <!--Inicio Cursos-->
-        <div class="row text-white py-5" id="courses">
+        <div class="row text-white py-3" id="courses">
             <div class="container text-center">
                 <div class="row justify-content-center">
                     <div class="col-md-8">
@@ -180,8 +187,51 @@
     </main>
     <!--Fin contenido principal-->
 
-    <!--Inicio footerl-->
-    <footer>
+    <!--Inicio footer-->
+    <footer class="d-flex flex-column justify-content-center align-items-center text-white py-5">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold mb-3">Swimming Club</h5>
+                    <p>Creemos que el entrenamiento nos potencia y nos une,
+                        por lo cual queremos que nuestros socios se sientan cómodos y
+                        se diviertan mientras aprenden.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Links de navegación</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="nav-link text-white">Inicio</a></li>
+                        <li><a href="#courses" class="nav-link text-white">Cursos</a></li>
+                        <li><a href="#about" class="nav-link text-white">Nosotros</a></li>
+                        <li><a href="#info" class="nav-link text-white">Info</a></li>
+                        <li><a href="#contact" class="nav-link text-white">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <h5 class="mb-3">Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-4"><i class="bi bi-telephone-fill"></i> +123 456 7890</li>
+                        <li class="mb-4"><i class="bi bi-envelope-fill"></i> swimming_club@gmail.com</li>
+                        <li class="mb-4"><i class="bi bi-geo-alt-fill"></i> Calle Wave 2480, Cali, Colombia</li>
+                    </ul>
+
+                    <div class="mt-1">
+                        <a href="#!" class="btn btn-sm me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#!" class="btn btn-sm me-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#!" class="btn btn-sm"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4 text-center">
+                <p class="mb-4"> Todos los derechos reservados &copy;
+                    <script> document.write(new Date().getFullYear());</script>
+                </p>
+                <img class="developed" src="img/developed.png" alt="logo desarrollo web">
+            </div>
+        </div>
 
     </footer>
     <!--Fin footer-->

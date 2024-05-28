@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-    margin    : 0;
-    padding   : 0;
-    box-sizing: border-box;
-    border    : none;
-    outline   : none !important;
+    margin         : 0;
+    padding        : 0;
+    box-sizing     : border-box;
+    border         : none !important;
+    outline        : none !important;
+    text-decoration: none !important;
 }
 
 html {
@@ -50,12 +51,24 @@ body {
 
 @keyframes upload {
     0% {
-        bottom: 20rem;
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-15px);
     }
 }
 
 .bi-arrow-up-circle:hover {
     color: azure;
+}
+
+/*Efecto wave (ola)*/
+
+.wave {
+    position: absolute;
+    bottom  : 0;
+    width   : 100%;
 }
 
 .container {
@@ -69,6 +82,7 @@ header {
         url(../img/bg.png) no-repeat center center/cover;
     height  : 100vh;
     position: relative;
+    width   : 100%;
 }
 
 .navbar-toggler {
@@ -190,6 +204,18 @@ header {
 
 /**CONTACTO*/
 
+#contact {
+    padding: 150px 0 !important;
+}
+
+#contact .btn:hover {
+    background: #f1ba77;
+}
+
+#contact .btn:focus {
+    box-shadow: none;
+}
+
 .input-group {
     background-color: azure;
     border-radius   : 50px;
@@ -201,6 +227,22 @@ header {
 
 .form-control:focus {
     box-shadow: none;
+}
+
+/**FOOTER*/
+
+footer {
+    background: #659cee;
+    min-height: 500px;
+}
+
+footer .btn {
+    background: #446c94;
+}
+
+.developed {
+    width        : 250px;
+    border-radius: 10px;
 }
 
 /**Media queries*/
