@@ -266,6 +266,7 @@ footer .btn {
 }
 
 @media (min-width: 768px) {
+
     #courses .col-md-4 {
         max-width: none;
     }
@@ -274,5 +275,28 @@ footer .btn {
     #about .col-md-7 {
         padding: 0 15px;
         /* Ajuste adicional para pantallas pequeñas */
+    }
+}
+
+@media (max-width: 768px) {
+    .box-title h1 {
+        font-size: 2.2rem;
+    }
+
+    .input-padding {
+        padding-left : 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 476px) {
+    .box-title h1 {
+        font-size: 1.8rem;
+    }
+
+    #about img {
+        padding-left : 10px;
+        padding-right: 10px;
+
     }
 }
